@@ -11,7 +11,7 @@ const Footer = ({ planet }) => {
             <div className="text-white text-xl md:text-2xl lg:text-3xl font-bold leading-6 tracking-wider  opacity-50 ml-1">
               ROTATION TIME
             </div>
-            <div className="text-white text-3xl lg:text-4xl tracking-tighter  ml-1 md:mt-4">
+            <div className="text-white text-2xl lg:text-4xl tracking-tighter  ml-1 md:mt-4">
               {data[planet].rotation} HOURS
             </div>
           </div>
@@ -21,7 +21,7 @@ const Footer = ({ planet }) => {
             <div className="text-white text-xl md:text-2xl lg:text-3xl font-bold leading-6 tracking-wider  opacity-50 ml-1">
               REVOLUTION TIME
             </div>
-            <div className="text-white text-3xl lg:text-4xl tracking-tighter  ml-1 md:mt-4">
+            <div className="text-white text-2xl lg:text-4xl tracking-tighter  ml-1 md:mt-4">
               {data[planet].revolution} {planet < 3 ? "DAYS" : "YEARS"}
             </div>
           </div>
@@ -31,7 +31,7 @@ const Footer = ({ planet }) => {
             <div className="text-white text-xl md:text-2xl lg:text-3xl font-bold leading-6 tracking-wider  opacity-50 ml-1">
               RADIUS
             </div>
-            <div className="text-white text-3xl lg:text-4xl tracking-tighter  ml-1 md:mt-4 ">
+            <div className="text-white text-2xl lg:text-4xl tracking-tighter  ml-1 md:mt-4 ">
               {data[planet].radious} KM
             </div>
           </div>
@@ -41,7 +41,7 @@ const Footer = ({ planet }) => {
             <div className="text-white text-xs md:text-2xl lg:text-3xl font-bold leading-6 tracking-wider  opacity-50 ml-1">
               AVERAGE TEMP.
             </div>
-            <div className="text-white text-3xl lg:text-4xl tracking-tighter  ml-1 md:mt-4">
+            <div className="text-white text-2xl lg:text-4xl tracking-tighter  ml-1 md:mt-4">
               {data[planet].avgtemp} ºC
             </div>
           </div>

@@ -32,7 +32,7 @@ module.exports = {
         },
       ],
       "2xl": [
-        "12px",
+        "18px",
         {
           lineHeight: "25px",
           letterSpacing: "2.6px",

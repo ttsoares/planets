@@ -50,7 +50,7 @@ export default function Home() {
           >
             <h3 className="text-xl">OVERVIEW</h3>
             {page === 0 ? (
-              <div className={`h-1 mt-2 w-[60px] ${color}`}></div>
+              <div className={`h-1 mt-2 w-[80px] ${color}`}></div>
             ) : (
               ""
             )}
@@ -61,7 +61,7 @@ export default function Home() {
           >
             <h3 className="text-xl">STRUCTURE</h3>
             {page === 1 ? (
-              <div className={`h-1 mt-2 w-[65px] ${color}`}></div>
+              <div className={`h-1 mt-2 w-[85px] ${color}`}></div>
             ) : (
               ""
             )}
@@ -72,7 +72,7 @@ export default function Home() {
           >
             <h3 className="text-xl">SURFACE</h3>
             {page === 2 ? (
-              <div className={`h-1 mt-2 w-[50px] ${color}`}></div>
+              <div className={`h-1 mt-2 w-[70px] ${color}`}></div>
             ) : (
               ""
             )}
