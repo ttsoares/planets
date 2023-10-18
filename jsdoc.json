@@ -1,0 +1,17 @@
+{
+  "source": {
+    "include": ["app", "components", "utils"],
+    "includePattern": ".+\\.js(|x)?$",
+    "excludePattern": "node_modules"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true
+  },
+  "opts": {
+    "recurse": true,
+    "destination": "./public/",
+    "readme": "./README.md"
+  }
+}
