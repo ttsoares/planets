@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - Planets fact site solution
 
-## Getting Started
+This is a solution to the [Planets fact site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each planet page and toggle between "Overview", "Internal Structure", and "Surface Geology"
+
+### Screenshot
+
+![](./screenshot.jpg)
+
+### Links
+
+- Solution URL: [Add solution URL here](https://github.com/ttsoares/planets)
+- Live Site URL: [Add live site URL here](https://planets-zeta.vercel.app/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- Tailwind custom properties
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [tailwindCSS](https://tailwindcss.com/) - For styles
+- [Zustand](https://www.npmjs.com/package/zustand) - A small, fast and scalable bearbones state-management solution using simplified flux principles.
+
+### What I learned
+
+The application of the state management Zustand in a very simple context.
+
+```js
+import { create } from "zustand";
+
+const usePlanets = create((set) => ({
+  planet: 0,
+  choose: (index) => set(() => ({ planet: index })),
+}));
+
+export default usePlanets;
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Continued development
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+There is a lot more to explore in the Zustand context.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Useful resources
 
-## Learn More
+- [Zustand/NextJS](https://www.youtube.com/watch?v=mu05SwL6l1o) - "State Management using Zustand In Nextjs 13.4 and React"
 
-To learn more about Next.js, take a look at the following resources:
+## Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Website - [Thomas Tschoepke Soares](https://www.linkedin.com/in/thomas-soares-6791781b/)
+- Frontend Mentor - [@ttsoares](https://www.frontendmentor.io/profile/ttsoares)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Acknowledgments
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Conditional TW classes](https://www.youtube.com/watch?v=VPpw6_S44J0) - How to apply clxs and tailwind-merge to manage conditional Tailwind classes.
